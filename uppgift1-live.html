@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestlad flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 400px;
+        }
+
+        .box {
+            padding: 36px;
+            width: 33%;
+            color: white;
+            font-size: 4.2rem;
+        }
+
+        .rectangle {
+            height: 120px;
+        }
+
+        .inner-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .red { background-color: rgb(208, 36, 36);}
+        .blue { background-color: rgb(24, 11, 113);}
+        .green {background-color:rgb(34, 202, 59)}
+
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="box red inner-column">1
+            <div class="rectangle green">1a</div>
+            <div class="rectangle blue">2a</div>
+        </div>
+        <div class="box green">2</div>
+        <div class="box blue">3</div>
+    </main>
+</body>
+</html>

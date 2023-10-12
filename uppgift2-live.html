@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            height: 60vh;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header, footer {
+            padding: 16px;
+            background-color: greenyellow;
+            height: 20vh;
+        }
+
+        aside, nav {
+            flex: 1;
+            background-color: bisque;
+            padding: 16px;
+        }
+
+        article {
+            flex: 3;
+            padding: 16px;
+        }
+
+    </style>
+</head>
+<body class="column">
+    <header>Header</header>
+    <div class="row">
+        <nav>Nav</nav>
+        <article>Article</article>
+        <aside>Aside</aside>
+    </div> 
+    <footer>Footer</footer>
+</body>
+</html>
